@@ -1,0 +1,70 @@
+.hello {
+   &__container {
+      display: flex;
+      flex-direction: row;
+   }
+
+   &__time {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 15%;
+      font-family: "OpenSans";
+      font-size: 12px;
+      text-align: end;
+      color: #fff;
+      white-space: nowrap;
+      font-weight: 700;
+      transform: rotate(-90deg);
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      margin: 150px 0px 0px 0px;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+   }
+   &__title {
+      font-family: "OpenSans";
+      font-weight: 700;
+      letter-spacing: 7px;
+      font-size: 12px;
+      color: #fff;
+   }
+   &__comp-name {
+      font-family: "Banny";
+      font-size: 96px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 30px;
+   }
+
+   &__seporate {
+      margin-top: 40px;
+      background: #e8c300;
+      border-radius: 50px;
+      width: 60px;
+      height: 5.11px;
+   }
+
+   &__control {
+   }
+
+   &__btn {
+   }
+
+   &__social {
+      width: 15%;
+   }
+
+   &__fb {
+   }
+
+   &__tw {
+   }
+
+   &__inst {
+   }
+}

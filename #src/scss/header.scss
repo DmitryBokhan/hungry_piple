@@ -1,22 +1,43 @@
 .header {
    &__content {
-   }
-
-   &__menu {
+      overflow: visible;
+      &__menu {
+      }
    }
 }
 
 .menu {
    &__icon {
    }
-
+   &__logo-container {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      margin: 0px 35px;
+   }
+   &__logo {
+      position: absolute;
+      top: 25px;
+   }
    &__body {
+      display: flex;
+      justify-content: space-between;
+      height: 100px;
    }
 
    &__list {
+      display: flex;
+      font-family: "OpenSans";
+      font-weight: 700;
+      font-size: 12px;
+      border-bottom: 2px rgba(255, 255, 255, 0.2) solid;
+      justify-content: space-around;
+      align-items: center;
+      flex: 1 1 auto;
    }
 
    &__link {
+      color: #fff;
    }
 }
 
@@ -39,7 +60,7 @@
          position: absolute;
          width: 100%;
          height: 2px;
-         background-color: #000;
+         background-color: #fff;
          &:first-child {
             top: 0;
          }

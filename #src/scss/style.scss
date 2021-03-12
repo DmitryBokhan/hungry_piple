@@ -3,7 +3,7 @@
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff") format("woff") url("../fonts/#{$file_name}.woff2") format("woff2");
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
@@ -22,7 +22,7 @@
 //</ПОДКЛЮЧАЕМ ИКОНОЧНЫЕ ШРИФТЫ>===================
 
 //<ШРИФТ ПО УМОЛЧАНИЮ>======================
-$fontFamily: "";
+$fontFamily: "OpenSans";
 //</ШРИФТ ПО УМОЛЧАНИЮ>======================
 
 //<ПЕРЕМЕННЫЕ>======================
@@ -38,12 +38,16 @@ $md4: 479.98;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============
 @import "null";
 body {
-	color: #000;
-	font-size: 10px; //был 14px
+	color: rgb(126, 126, 126);
+	font-size: 14px; //был 14px
 	font-family: $fontFamily;
 	&._lock {
 		overflow: hidden;
 	}
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	z-index: -1;
 }
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============
 
@@ -79,4 +83,6 @@ body {
 //<ПОДКЛЮЧАЕМ ОБЩИЕ СТИЛИ (ФОРМЫ, КНОПКИ, ТИПОГРАФИЮ>=========
 @import "ui";
 @import "forms";
+@import "header";
+@import "hello";
 //<ПОДКЛЮЧАЕМ ОБЩИЕ СТИЛИ (ФОРМЫ, КНОПКИ, ТИПОГРАФИЮ>=========
