@@ -1,6 +1,5 @@
 .header {
    &__content {
-      overflow: visible;
       &__menu {
       }
    }
@@ -11,14 +10,10 @@
    }
    &__logo-container {
       position: relative;
-      height: 150px;
-      width: 150px;
-      margin: 0px 35px;
+      height: 100px;
+      width: 220px;
    }
-   &__logo {
-      position: absolute;
-      top: 25px;
-   }
+
    &__body {
       display: flex;
       justify-content: space-between;
@@ -27,13 +22,18 @@
 
    &__list {
       display: flex;
+      width: 40%;
       font-family: "OpenSans";
       font-weight: 700;
       font-size: 12px;
-      border-bottom: 2px rgba(255, 255, 255, 0.2) solid;
+      border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
       justify-content: space-around;
       align-items: center;
       flex: 1 1 auto;
+      li a:hover {
+         transition: color 0.3s ease 0s;
+         color: #e8c300;
+      }
    }
 
    &__link {

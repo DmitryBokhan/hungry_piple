@@ -9,8 +9,10 @@
    font-size: 20px;
    line-height: 29 / 20 * 100%; //вычисляем высоту строки в зависимости от величины шрифта
    @media (min-width: 992px) {
+      transition: background-color 0.3s ease 0s;
       &:hover {
-         background-color: #d15050;
+         background-color: #e8c300;
+         border: 2px solid #e8c300;
       }
    }
    &._fw {

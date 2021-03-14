@@ -1,13 +1,14 @@
 @font-face {
-   font-family: "icons";
+   font-family: "icon";
    font-display: swap;
-   src: url("../fonts/icons.woff") format ("woff"), rl("../fonts/icons.woff2#icons") format ("woff2");
+   src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.woff2#icon") format("woff2");
    font-weight: normal;
    font-style: normal;
    font-display: block;
 }
+//===================
 %ic {
-   font-family: "icons";
+   font-family: "icon";
    font-style: normal;
    font-weight: normal;
    font-variant: normal;
@@ -26,16 +27,19 @@
 }
 
 // Добавляем классы иконок
-
-// ._icon-linkedin:before {
-//    content: "\e900";
-// }
-// ._icon-twitter:before {
-//    content: "\e901";
-// }
-// ._icon-insta:before {
-//    content: "\e902";
-// }
-// ._icon-fb:before {
-//    content: "\e903";
-// }
+._icon-arrow:before {
+   content: "\e900";
+   color: #222;
+}
+._icon-insta:before {
+   content: "\e901";
+   color: #fff;
+}
+._icon-tw:before {
+   content: "\e902";
+   color: #fff;
+}
+._icon-fb:before {
+   content: "\e903";
+   color: #fff;
+}
