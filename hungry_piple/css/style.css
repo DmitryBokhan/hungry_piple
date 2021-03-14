@@ -213,6 +213,13 @@ body._lock {
   margin: 0 auto;
 }
 
+.seporate {
+  background: #e8c300;
+  border-radius: 50px;
+  width: 60px;
+  height: 5px;
+}
+
 ._ibg {
   position: relative;
 }
@@ -283,8 +290,6 @@ body._lock {
 .hello__container {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  overflow: visible;
 }
 
 .hello__time {
@@ -337,10 +342,6 @@ body._lock {
 
 .hello__seporate {
   margin-top: 40px;
-  background: #e8c300;
-  border-radius: 50px;
-  width: 60px;
-  height: 5px;
 }
 
 .hello__control {
@@ -438,6 +439,75 @@ body._lock {
 
 .hello__border:hover {
   background-color: #e8c300;
+}
+
+.about__container {
+  display: flex;
+  margin-top: 100px;
+  position: relative;
+}
+
+.about__discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 20px;
+}
+
+.about__title {
+  font-family: "Banny";
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+}
+
+.about__seporate {
+  margin-top: 20px;
+}
+
+.about__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 155.55556%;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 171.42857%;
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about__img {
+  max-width: 50%;
+  position: relative;
+  right: 0;
+}
+
+.about__coals {
+  margin-left: 40px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__decor {
+  position: absolute;
+  top: 25%;
+  right: -25%;
+  display: flex;
+  width: 250px;
+  height: 250px;
+  border: 20px solid #e8c300;
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
 }
 
 @media (min-width: 992px) {

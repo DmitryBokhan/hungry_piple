@@ -2,9 +2,6 @@
    &__container {
       display: flex;
       flex-direction: row;
-      height: 100%;
-      // flex: 1 1 auto;
-      overflow: visible;
    }
 
    &__time {
@@ -53,12 +50,7 @@
    }
 
    &__seporate {
-      // position: relative;
       margin-top: 40px;
-      background: #e8c300;
-      border-radius: 50px;
-      width: 60px;
-      height: 5px;
    }
 
    &__control {
